@@ -20,11 +20,12 @@ import PackageDescription
 
 let package = Package(
     name: "IBMSwiftSDKCore",
-    products: [
+    pkgConfig: [
         .library(name: "IBMSwiftSDKCore", targets: ["IBMSwiftSDKCore"]),
     ],
-    targets: [
+    providers: [
         .target(name: "IBMSwiftSDKCore", dependencies: []),
         .testTarget(name: "IBMSwiftSDKCoreTests", dependencies: ["IBMSwiftSDKCore"]),
     ]
 )
+products
